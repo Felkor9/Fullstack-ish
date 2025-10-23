@@ -1,42 +1,122 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.heading {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0;
+  padding: 1.5rem 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
+
+.container{
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+}
+
+.formcard-container{
+  background-color: white;
   padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 50vh;
+  min-width: 40vw;
+}
+
+.input-group{
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+label{
+  font-size: 14px;
+  color: black;
+  margin-right: 10px;
+}
+
+.section-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: black;
+}
+.text-input-form{
+  gap: 1em;
+  margin-top: 10px;
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.list-item{
+  color: black;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.btn-remove{
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+.submit-btn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.submit-btn:hover{
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+.card {
+  background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 50vh;
+    min-width: 25vw;
 }
 
 .read-the-docs {
   color: #888;
+}
+.heading{
+  color:black;
 }
